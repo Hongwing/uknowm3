@@ -1,9 +1,7 @@
-# Portfolio Website
+# You Know What I'm saying.
 
 ## Live Demo
-The website can be viewed live at https://profile-umber-five.vercel.app/
-
-A personal portfolio website created using HTML5, CSS3, JavaScript, and Tailwind CSS.
+The website can be viewed live at https://uknowm3.com/
 
 ## Features
 
@@ -30,7 +28,4 @@ A personal portfolio website created using HTML5, CSS3, JavaScript, and Tailwind
 2. Install dependencies using `npm install`
 3. Run the development server using `npm run server`
 
-## Author
-
-## License
 

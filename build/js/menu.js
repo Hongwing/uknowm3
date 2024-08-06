@@ -2,19 +2,19 @@ const dropdownMenu = document.querySelector("#dropdownMenu");
 const menuIcon = document.querySelector("#menu");
 const list = document.querySelector(".toggle-list");
 
-menuIcon.addEventListener("click", () => {
-  menuToggle();
-  menuIcon.classList.toggle("scale-105");
-  list.addEventListener("click", () => {
-    dropdownMenu.classList.remove("flex");
-    dropdownMenu.classList.add("hidden");
-  });
-});
+// menuIcon.addEventListener("click", () => {
+//   menuToggle();
+//   menuIcon.classList.toggle("scale-105");
+//   list.addEventListener("click", () => {
+//     dropdownMenu.classList.remove("flex");
+//     dropdownMenu.classList.add("hidden");
+//   });
+// });
 
-function menuToggle(params) {
-  dropdownMenu.classList.toggle("hidden");
-  dropdownMenu.classList.toggle("flex");
-}
+// function menuToggle(params) {
+//   dropdownMenu.classList.toggle("hidden");
+//   dropdownMenu.classList.toggle("flex");
+// }
 
 //Projects Lists
 
@@ -133,15 +133,15 @@ function displayAllProjects(projectsList) {
     }
   });
   displayProjects = displayProjects.join("");
-  projectContainer.innerHTML = displayProjects;
-  setTimeout(() => {
-    var player1, firstStateChange;
-    player1 = new YT.Player("player-1", {
-      videoId: "KLc7isg2IyA",
-    });
-  }, 1000)
+  // projectContainer.innerHTML = displayProjects;
+  // setTimeout(() => {
+  //   var player1, firstStateChange;
+  //   player1 = new YT.Player("player-1", {
+  //     videoId: "KLc7isg2IyA",
+  //   });
+  // }, 1000)
 }
 
 window.addEventListener("DOMContentLoaded", function () {
-  displayAllProjects(projectList);
+  // displayAllProjects(projectList);
 });
