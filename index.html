@@ -10,15 +10,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script defer src="build/js/menu.js"></script>
   <script defer src="build/js/email.js"></script>
+  <script src="https://unpkg.com/js-bullets@latest/dist/BulletJs.min.js"></script>
   <title>Welcome to UKnowM3</title>
 </head>
 
 <body class="flex min-w-full flex-col items-center text-white bg-zinc-900">
-  <header class="fixed top-0 z-10 flex h-20 min-w-full justify-center p-2 text-lg text-gray-300 sm:h-24">
+  <!-- <header class="fixed top-0 z-10 flex h-20 min-w-full justify-center p-2 text-lg text-gray-300 sm:h-24">
     <div class="header-hero flex w-4/5 items-center justify-between">
     </div>
-  </header>
+  </header> -->
   <main class="flex min-h-screen min-w-full flex-col items-center">
+    <section class="flex w-3/4 flex-col items-center justify-center pt-12 md:pt-24 lg:min-w-full">
+      <div id="screen" style="width: 100%; height: 80px;"></div>
+    </section>
     <section id="hero" class="flex w-3/4 flex-col items-center justify-center pt-12 md:pt-24 lg:min-w-full">
       <div id="hero-wrap" class="flex justify-center lg:gap-16">
         <div id="intro" class="mx-auto flex flex-col justify-center">
@@ -110,6 +114,12 @@
         requestAnimationFrame(frame);
       }
     }());
+
+    (function danmu() {
+      // .screen 的 div 必须要有明确的宽高
+      const screen = new BulletJs('#screen', {});
+      screen.push("<span style='font-size:1.2rem'>❤️恭喜你打卡成功 - UKnowM3❤️</span>")
+    })();
   </script>
 </body>
 
